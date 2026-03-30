@@ -112,12 +112,10 @@ class EpisodeStoryGrid extends StatelessWidget {
                         episode.title,
                         style: const TextStyle(
                           color: Colors.white,
-                          fontSize: 20,
+                          fontSize: 24,
                           fontWeight: FontWeight.w800,
                         ),
                       ),
-                      _MetaChip(label: episode.duration),
-                      _MetaChip(label: episode.releaseDate),
                     ]
                   ),
                   if (episode.songs != null && episode.songs!.isNotEmpty) ...[
@@ -200,7 +198,7 @@ class _EpisodeCard extends StatelessWidget {
                 overflow: TextOverflow.ellipsis,
                 style: const TextStyle(
                   color: Colors.white,
-                  fontSize: 22,
+                  fontSize: 24,
                   fontWeight: FontWeight.w800,
                 ),
               ),
